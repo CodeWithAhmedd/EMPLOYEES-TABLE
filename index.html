@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Employee Info</title>
+</head>
+<link rel="stylesheet" href="style.css">
+<body>
+    <h1>Table of Employees</h1>
+    <div class="button-container">
+        <button id="openFormButton" class="custom-button">Add Employee</button>
+        <button id="deleteButton" class="custom-button">Delete Last Employee</button>
+    </div>
+    <!-- <button id="openFormButton" class="custom-button">Add Employee</button> -->
+    <div id="formContainer" class="form-container">
+        <h3>Add Employee Details</h3>
+        <input type="text" id="employeeName" placeholder="Enter Name" required>
+        <input type="number" id="employeeAge" placeholder="Enter Age" required>
+        <input type="text" id="employeePhone" placeholder="Enter Phone Number" required>
+        <input type="text" id="employeeAddress" placeholder="Enter Address" required>
+        <button id="submitEmployeeButton">Submit</button>
+    </div>
+    <table id="employeesTable">
+        <tr>
+            <th>Name</th>
+            <th>Age</th>
+            <th>Phone Number</th>
+            <th>Address</th>
+        </tr>
+    </table>
+<script src="app.js"></script>
+</body>
+</html>
